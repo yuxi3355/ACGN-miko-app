@@ -8,7 +8,6 @@
 游戏区主要是galgame分享，使用scrapy爬取全网的galgame资源。链接失效正在补链ing。<br>
 
 
-
 #### ps: 请使用网易云音乐账号登录miko!   您的star是开发者不竭的动力~~
 <center class="half">
 <img src="https://mikochat.oss-ap-northeast-1.aliyuncs.com/release/miko_1.0.2-beta.png" width="200"/><img src="https://mikochat.oss-ap-northeast-1.aliyuncs.com/release/qq.jpg" alt="联系我QQ" height="200"/>
@@ -54,7 +53,6 @@
     <img src="https://mikochat.oss-ap-northeast-1.aliyuncs.com/Screenshoots/miko/anime/27.jpg" width="200px" />
     <img src="https://mikochat.oss-ap-northeast-1.aliyuncs.com/Screenshoots/miko/anime/28.jpg" width="200px" />
 </center>
-
 
 #### ps: 请使用网易云音乐账号登录miko!   您的star是开发者不竭的动力~~
 <center>
@@ -104,6 +102,8 @@
     <img src="https://mikochat.oss-ap-northeast-1.aliyuncs.com/Screenshoots/miko/anime/28.jpg" width="200px" />
 </center>
 
+=======
+>>>>>>> 7b7941b7dddb95f2cf2b9bcc8d320e665b927c6c
 ### 搜索
 <center class="half">
     <img src="https://mikochat.oss-ap-northeast-1.aliyuncs.com/Screenshoots/miko/search/12.jpg" width="200px" />
