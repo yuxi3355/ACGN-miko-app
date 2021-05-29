@@ -54,56 +54,6 @@
     <img src="https://mikochat.oss-ap-northeast-1.aliyuncs.com/Screenshoots/miko/anime/28.jpg" width="200px" />
 </center>
 
-#### ps: 请使用网易云音乐账号登录miko!   您的star是开发者不竭的动力~~
-<center>
-<img src="https://mikochat.oss-ap-northeast-1.aliyuncs.com/release/miko_1.0.2-beta.png" width="200"/>
-<img src="https://mikochat.oss-ap-northeast-1.aliyuncs.com/release/qq.jpg" alt="联系我QQ" height="200"/>
-</center>
-
-[扫码或点击下载体验](https://mikochat.oss-ap-northeast-1.aliyuncs.com/release/miko_1.0.2-beta.apk)
-<br/>
-
-## 软件架构
-### miko使用标准MVP模式、模块化开发。
-1、app存放Activity和Fragment, 使用ButterKnife进行控件绑定。<br/>
-2、com定义项目中公用的部分。封装网络和数据回调接口以及MVP模式基本契约，<br/>
-   网络请求API、常量，封装RecyclerView, Adapter, 定义个性化控件等。 <br/>
-3、fac定义数据Model，封装网络请求工具类，定义Retrofit2代理,以及Presenter的实现。<br/>
-4、res存放item布局文件，各种drawable、string、color、dimen资源。是主要的资源模块。<br/>
-
-## 功能截图
-### 主页
-<center class="half">
-    <img src="https://mikochat.oss-ap-northeast-1.aliyuncs.com/Screenshoots/miko/index/0.jpg" width="200px" />
-    <img src="https://mikochat.oss-ap-northeast-1.aliyuncs.com/Screenshoots/miko/index/1.jpg" width="200px" />
-    <img src="https://mikochat.oss-ap-northeast-1.aliyuncs.com/Screenshoots/miko/index/2.jpg" width="200px" />
-    <img src="https://mikochat.oss-ap-northeast-1.aliyuncs.com/Screenshoots/miko/index/3.jpg" width="200px" />
-    <img src="https://mikochat.oss-ap-northeast-1.aliyuncs.com/Screenshoots/miko/index/4.jpg" width="200px" />
-    <img src="https://mikochat.oss-ap-northeast-1.aliyuncs.com/Screenshoots/miko/index/5.jpg" width="200px" />
-</center>
-
-### 音乐区
-<center class="half">
-    <img src="https://mikochat.oss-ap-northeast-1.aliyuncs.com/Screenshoots/miko/music/6.jpg" width="200px" />
-    <img src="https://mikochat.oss-ap-northeast-1.aliyuncs.com/Screenshoots/miko/music/7.jpg" width="200px" />
-    <img src="https://mikochat.oss-ap-northeast-1.aliyuncs.com/Screenshoots/miko/music/8.jpg" width="200px" />
-    <img src="https://mikochat.oss-ap-northeast-1.aliyuncs.com/Screenshoots/miko/music/9.jpg" width="200px" />
-    <img src="https://mikochat.oss-ap-northeast-1.aliyuncs.com/Screenshoots/miko/music/10.jpg" width="200px" />
-    <img src="https://mikochat.oss-ap-northeast-1.aliyuncs.com/Screenshoots/miko/music/11.jpg" width="200px" />
-</center>
-
-### 动漫区
-<center class="half">
-    <img src="https://mikochat.oss-ap-northeast-1.aliyuncs.com/Screenshoots/miko/anime/19.jpg" width="200px" />
-    <img src="https://mikochat.oss-ap-northeast-1.aliyuncs.com/Screenshoots/miko/anime/20.jpg" width="200px" />
-    <img src="https://mikochat.oss-ap-northeast-1.aliyuncs.com/Screenshoots/miko/anime/21.jpg" width="200px" />
-    <img src="https://mikochat.oss-ap-northeast-1.aliyuncs.com/Screenshoots/miko/anime/22.jpg" width="200px" />
-    <img src="https://mikochat.oss-ap-northeast-1.aliyuncs.com/Screenshoots/miko/anime/27.jpg" width="200px" />
-    <img src="https://mikochat.oss-ap-northeast-1.aliyuncs.com/Screenshoots/miko/anime/28.jpg" width="200px" />
-</center>
-
-=======
->>>>>>> 7b7941b7dddb95f2cf2b9bcc8d320e665b927c6c
 ### 搜索
 <center class="half">
     <img src="https://mikochat.oss-ap-northeast-1.aliyuncs.com/Screenshoots/miko/search/12.jpg" width="200px" />
