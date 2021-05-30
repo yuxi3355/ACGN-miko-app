@@ -64,7 +64,7 @@ public class Network {
 //                            /* 注入一个token */
 
                         String cookie = Account.getCookie();
-                        if(Account.getCookie()!=null)
+                        if(cookie!=null)
                             builder.addHeader("Cookie", cookie);
 
                         builder.addHeader("Content-type", contentType);

@@ -4,6 +4,7 @@ import com.xana.acg.Factory;
 import com.xana.acg.com.data.DataSource;
 import com.xana.acg.com.utils.TextUtils;
 import com.xana.acg.fac.model.api.Resp;
+import com.xana.acg.fac.priavte.Account;
 
 import java.io.IOException;
 import java.util.Collection;
@@ -28,6 +29,9 @@ public class NetCallBack<T extends Resp> implements Callback<T> {
     }
     @Override
     public void onResponse(Call<T> call, Response<T> resp) {
+//        String cok = null;
+//        if(TextUtils.isEmpty(Account.getCookie())&&!TextUtils.isEmpty(cok=resp.headers().get("Set-Cookie")))
+//            Account.setCookie(cok);
         if(callback==null)
             return;
         Object o = resp.body();

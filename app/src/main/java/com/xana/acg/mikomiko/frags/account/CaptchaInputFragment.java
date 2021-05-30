@@ -59,14 +59,17 @@ public class CaptchaInputFragment extends Fragment {
             }
         });
         act.click(2, null);
-        new ResendTask().start();
+        (Ttask = new ResendTask()).start();
     }
 
     @OnClick(R.id.tv_resend)
     void send() {
-        new ResendTask().start();
+        (Ttask = new ResendTask()).start();
         act.click(2, null);
     }
+
+
+    private Thread Ttask;
 
     private class TaskHanlder extends Handler {
         @Override
@@ -110,6 +113,7 @@ public class CaptchaInputFragment extends Fragment {
     @Override
     public void onDestroy() {
         super.onDestroy();
-        act = null;
+        if(Ttask!=null)
+            Ttask.interrupt();
     }
 }

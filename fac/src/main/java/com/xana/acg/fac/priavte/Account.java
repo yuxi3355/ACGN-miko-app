@@ -67,6 +67,10 @@ public class Account {
         avatar = user.getProfile().avatarUrl;
         save(Factory.app());
     }
+    public static void setCookie(String cok){
+        cookie  = cok;
+        save(Factory.app());
+    }
 
     public static void logout(){
         token = null;

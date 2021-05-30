@@ -62,7 +62,7 @@ public class AccountPresenter extends BasePresenter<AccountContract.View>
     public void login(String smart, String pass) {
         if (!check(smart, pass, null)) return;
         start();
-        AccountHelper.login(smart, pass, new LoginCallback(pass));
+        AccountHelper.login(smart, pass, new LoginCallback(smart, pass));
     }
 
     @Override
@@ -101,22 +101,28 @@ public class AccountPresenter extends BasePresenter<AccountContract.View>
 
     @Override
     public void register(String smart, String pass, String nickname, String captcha) {
-        if (!check(smart, pass, nickname)) return;
+//        if (!check(smart, pass, nickname)) return;
         start();
-        AccountHelper.register(smart, pass, nickname, captcha, new LoginCallback(pass));
+        AccountHelper.register(smart, pass, nickname, captcha, new LoginCallback(smart, pass));
     }
 
 
     private class LoginCallback implements DataSource.Callback<MusicUser> {
 
-        String p;
+        String p, s;
 
-        public LoginCallback(String pass) {
+        public LoginCallback(String smart, String pass) {
+            s = smart;
             p = pass;
         }
 
         @Override
         public void success(MusicUser d) {
+            // 注册用户
+            if(d.getCookie()==null) {
+                login(s, p);
+                return;
+            }
             TbUser user = new TbUser(d.getId(), d.getProfile().nickname, p, d.getProfile().avatarUrl);
             Network.remote(SELF).login(user).enqueue(new NetCallBack<>());
             getView().loginOk(d);
